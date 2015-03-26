@@ -6,10 +6,10 @@ class CSV(object):
 
     def __init__(self):
         try:
-         csv_f = open("van.csv")
-         csv_f_r = csv.reader(csv_f)
-         print tabulate(csv_f_r)
-         csv_f.close()
+
+         print tabulate(csv.reader(open("van.csv")))
+
+         open("van.csv").close()
 
         except IOError:
             print "Something went wrong"
