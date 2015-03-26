@@ -1,5 +1,6 @@
 #import os.path
 
+
 try:
 	txt_file = open("file.txt","r")	
 	line_1 = txt_file.readline()
