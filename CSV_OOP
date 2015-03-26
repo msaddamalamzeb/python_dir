@@ -1,0 +1,18 @@
+# reading CSV file using OOP
+import csv
+from tabulate import tabulate
+
+class CSV(object):
+
+    def __init__(self):
+        try:
+         csv_f = open("van.csv")
+         csv_f_r = csv.reader(csv_f)
+         print tabulate(csv_f_r)
+         csv_f.close()
+
+        except IOError:
+            print "Something went wrong"
+
+csv_obj = CSV()
+
