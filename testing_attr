@@ -1,0 +1,23 @@
+# Attribute Critter
+
+class Critter(object):
+    """
+     A Virtual Pet
+    """
+    def __init__(self,name):
+        self.name = name
+
+    def __str__(self):
+        rep = "Critter Object"
+        rep += " name : " + self.name + "\n"
+        return rep
+
+
+
+#main
+crit = Critter("Salman")
+
+
+print crit
+
+

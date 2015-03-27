@@ -1,0 +1,21 @@
+import csv
+from tabulate import tabulate
+
+class csv_attr(object):
+
+    def __init__(self,obj):
+
+       self.obj = csv_reader(obj)
+
+
+
+    def __str__(self):
+
+        return self.obj
+
+csv_obj = csv_attr("open('van.csv')")
+
+print tabulate( csv_obj)
+csv_obj.close()
+
+
