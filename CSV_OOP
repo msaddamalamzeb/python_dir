@@ -6,8 +6,9 @@ class CSV(object):
 
     def __init__(self):
         try:
-         print tabulate(csv.reader(open("van.csv")))
-         open("van.csv").close()
+            txt_file = open("van.csv")
+            print tabulate(csv.reader(txt_file))
+            txt_file.close()
 
         except IOError:
             print "Something went wrong"
